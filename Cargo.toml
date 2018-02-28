@@ -1,0 +1,31 @@
+[package]
+name = "RustAndGrpc"
+version = "0.1.0"
+authors = ["renosyah <syahputrareno975@gmail.com>"]
+
+[lib]
+name = "RustAndGrpc"
+doctest = false
+test = false
+
+[dependencies]
+grpc            = "0.*"
+protobuf        = "1.*"
+futures         = "0.1"
+futures-cpupool = "0.1"
+tls-api  = "0.1.12"
+
+[build-dependencies]
+protoc-rust-grpc = "0.2.1"
+
+
+[[bin]]
+name = "HelloServer"
+test = false
+
+[[bin]]
+name = "HelloClient"
+test = false
+
+
+

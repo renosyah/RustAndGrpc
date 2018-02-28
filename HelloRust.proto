@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package HelloRustHandle;
+
+service HelloRustHandleService {
+	rpc HelloRust(RequestHelloRust) returns (ResponseHelloRust);
+}
+
+message RequestHelloRust {
+	string Text = 1;
+}
+
+message ResponseHelloRust {
+	string ResponseText = 1;
+}
